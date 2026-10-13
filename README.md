@@ -38,4 +38,6 @@ HIP SDK 可通过环境变量 `HIP_PATH` 指定。启动器也检查 `D:\AMD_ROC
 
 公开仓库首次发布使用源码快照，不附带旧训练数据或本机诊断记录；原始提交见 `SOURCE_PROVENANCE.json`。第三方 ADLX 的许可文件位于其源码目录，HIP/驱动由用户从 AMD 安装。视频资源保留项目已有内容。本项目未新增开源许可授权。
 
-发布整理协作署名：GPT6-Astra。
+项目开发由多种模型参与协作。按项目维护者提供的名单，参与模型包括：小米 Mimo V2.5 Pro、V2.6 Pro Flash；DeepSeek V4 Pro Flash、V4.1 Flash；GPT 5.6、Sol 5.6 Luna、6.1 sol、6 Astra luna。名称按维护者提供的称呼记录。
+
+发布整理协作署名：GPT6-Astra（仅指本次发布整理，不代表全部开发贡献）。
