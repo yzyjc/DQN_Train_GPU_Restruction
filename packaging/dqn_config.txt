@@ -1,0 +1,17 @@
+# DQN 0.1 conservative fresh-training defaults
+train_repeat=1
+learning_rate=-1
+live_two_scale=1
+block_win_scale=1
+advanced_scale=1
+epsilon_override=-1
+memory_enabled=1
+memory_scale=0.5
+memory_confidence=0.3
+step_outcome_enabled=1
+black_fast_win_scale=0.1
+white_survival_scale=0.05
+white_draw_length_scale=0.05
+curriculum_enabled=1
+rehearsal_enabled=1
+curriculum_eval_interval=500

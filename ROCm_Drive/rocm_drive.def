@@ -1,0 +1,27 @@
+LIBRARY rocm_drive
+EXPORTS
+    accelv2_init
+    accelv2_cleanup
+    accelv2_get_device_name
+    accelv2_get_device_memory
+    accelv2_sync
+    accelv2_malloc
+    accelv2_free
+    accelv2_upload
+    accelv2_download
+    accelv2_memcpy
+    accelv2_sgemv
+    accelv2_sger
+    accelv2_sgemm
+    accelv2_nn_create
+    accelv2_nn_destroy
+    accelv2_nn_upload
+    accelv2_nn_download
+    accelv2_nn_copy
+    accelv2_nn_soft_update
+    accelv2_nn_forward
+    accelv2_nn_train_step
+    accelv2_rb_create
+    accelv2_rb_destroy
+    accelv2_rb_store
+    accelv2_rb_sample

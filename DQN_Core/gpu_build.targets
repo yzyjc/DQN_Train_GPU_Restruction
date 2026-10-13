@@ -1,0 +1,17 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DqnRocmRoot Condition="'$(DqnRocmRoot)'==''">D:\AMD_ROCm</DqnRocmRoot>
+    <DqnGpuArch Condition="'$(DqnGpuArch)'==''">gfx1151</DqnGpuArch>
+    <DqnHipRuntime Condition="'$(Configuration)'=='Debug'">dll_dbg</DqnHipRuntime>
+    <DqnHipRuntime Condition="'$(DqnHipRuntime)'==''">dll</DqnHipRuntime>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(Platform)'=='x64'">
+    <CustomBuild Include="$(MSBuildThisFileDirectory)src\gpu_neural_net.hip">
+      <Message>Compiling HIP training kernels from source ($(DqnGpuArch))</Message>
+      <Command>"$(DqnRocmRoot)\lib\llvm\bin\clang++.exe" -x hip --offload-arch=$(DqnGpuArch) -fms-runtime-lib=$(DqnHipRuntime) -O2 -std=c++17 -D__HIP_PLATFORM_AMD__ -I"$(DqnRocmRoot)\include" -I"$(MSBuildThisFileDirectory)include" -c "%(FullPath)" -o "$(IntDir)gpu_neural_net.obj"</Command>
+      <Outputs>$(IntDir)gpu_neural_net.obj</Outputs>
+      <AdditionalInputs>$(MSBuildThisFileDirectory)include\gpu_types.h;$(MSBuildThisFileDirectory)include\network_input.h;$(MSBuildThisFileDirectory)include\gpu_kernel_timer.h;$(MSBuildThisFileFullPath);%(AdditionalInputs)</AdditionalInputs>
+      <LinkObjects>true</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

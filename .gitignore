@@ -1,0 +1,40 @@
+# ===== Visual Studio 本地文件与用户设置 =====
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+
+# ===== 构建产物目录 =====
+x64/
+obj/
+build/
+out/
+
+# ===== 编译输出 =====
+*.obj
+*.lib
+*.exe
+*.pdb
+*.tlog
+*.ilk
+*.exp
+*.idb
+*.ipdb
+
+# ===== 训练运行时数据（checkpoint / replay / 日志 / 模型 / 记忆 / 标志） =====
+checkpoints/
+checkpoints_temp/
+logs/
+*.flag
+*.bak
+
+# ===== 本地工具设置 / 归档 / 诊断 / 审计 / 验证输出 =====
+.claude/
+_archive/
+diag/
+audit_memory_*/
+build_verify/
+
+# ===== 根目录散落产物 =====
+rollback_logs_once.obj

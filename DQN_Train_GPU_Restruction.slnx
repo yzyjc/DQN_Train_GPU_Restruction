@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="DQN_Core/DQN_Core.vcxproj" Id="3dc300bf-3a32-432d-b912-ac4258011110" />
+  <Project Path="DQN_Main_TUI_No_Terminal/DQN_Main_TUI_No_Terminal.vcxproj" Id="3b8d1c4e-6f70-4a2b-9c5d-8e1f2a3b4c5d" />
+  <Project Path="DQN_Train_Trainer_NoTerminal/DQN_Train_Trainer_NoTerminal.vcxproj" Id="a3b2c1d4-7f8e-4a3b-9c2d-5e6f7a8b9c0d" />
+  <Project Path="Watchdog_NoTerminal/Watchdog_NoTerminal.vcxproj" Id="d4e5f6a0-2b3c-4d5e-8f9a-0b1c2d3e4f50" />
+  <Project Path="Log_Vindicator/Log_Vindicator.vcxproj" Id="a62d82af-4cb9-4cd7-83ab-27b94d95b73c">
+    <Build Solution="Debug|*" Project="false" />
+    <Build Solution="*|x86" Project="false" />
+  </Project>
+</Solution>

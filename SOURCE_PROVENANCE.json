@@ -1,0 +1,7 @@
+{
+  "version": "0.1",
+  "original_repository_commit": "b9472da8fe6aaf20d78c7d3c97d8694e6c115326",
+  "binary_source_commit": "655bcfd923b0b7d59a6de596f8a2e30a28f14058",
+  "snapshot_reason": "Initial public source snapshot; local historical training data and diagnostics are not published.",
+  "signature": "GPT6-Astra"
+}

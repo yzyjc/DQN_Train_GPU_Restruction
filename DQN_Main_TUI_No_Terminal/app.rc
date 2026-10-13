@@ -1,0 +1,4 @@
+#include "resource.h"
+
+101 ICON "app_icon.ico"
+IDR_BADAPPLE_BAV31 RCDATA "badapple_80x25_mono.bav"
